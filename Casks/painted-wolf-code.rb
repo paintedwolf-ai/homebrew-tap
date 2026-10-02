@@ -1,4 +1,4 @@
-cask "painted-wolf-code@preview" do
+cask "painted-wolf-code" do
   version "1.0.0"
   sha256 "e27d8e49c576ed11d4c3e8d2d5d2026dcdc6f2cfe3c8eee499d28941376492ba"
 
@@ -7,7 +7,7 @@ cask "painted-wolf-code@preview" do
   desc "Local-first AI coding agent"
   homepage "https://paintedwolf.ai"
 
-  conflicts_with cask: "painted-wolf-code"
+  conflicts_with cask: "painted-wolf-code@preview"
   depends_on arch: :arm64
   depends_on macos: ">= :sonoma"
 
@@ -19,7 +19,7 @@ cask "painted-wolf-code@preview" do
     system_command "/bin/sh",
                    args: [
                      "-c",
-                     "umask 077; printf '%s\\n' '{\"install_source\":\"homebrew_cask\",\"release_channel\":\"preview\"}' > \"$1/install-source.json\"",
+                     "umask 077; printf '%s\\n' '{\"install_source\":\"homebrew_cask\",\"release_channel\":\"stable\"}' > \"$1/install-source.json\"",
                      "--",
                      marker_dir,
                    ]

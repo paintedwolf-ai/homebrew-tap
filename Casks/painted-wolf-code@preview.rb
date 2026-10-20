@@ -1,6 +1,6 @@
 cask "painted-wolf-code@preview" do
-  version "1.0.2-rc7"
-  sha256 "9da5cc75816be435f56ded389140be54b22353891021b81c537f16ed3e604602"
+  version "1.0.2-rc8"
+  sha256 "c147c19082d17e612700142a3d3fa2698220fe8338339dac3c6147aef857ac58"
 
   url "https://downloads.paintedwolf.dev/releases/v#{version}/painted-wolf-code_v#{version}_darwin-aarch64.dmg"
   name "Painted Wolf Code"
